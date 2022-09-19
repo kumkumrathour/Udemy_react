@@ -12,7 +12,7 @@ const ExpenseItem = (props) => {
   // let title =props.title;
   const clickHandler =()=>{
     setTitle('weChangeYou');
-    console.log(title);
+  
   };
        
     return (
