@@ -32,7 +32,7 @@ const Dummy_Data = [
         },
       ];
       const  App = () => {
-            const [expenses, setExpenses] =useState(Dummy_Data);
+            const [expenses, setExpenses] = useState(Dummy_Data);
           
         
       const addExpenseHandler =(expense)=>{
