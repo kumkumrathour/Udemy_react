@@ -16,30 +16,20 @@ const Dummy_Data = [
             id :'e2',
             title:'bike Insurance',
           amount:833.4,
-          date: new Date(1996,11,24)
-        },
-        {
-            id:'e3',
-            title:'cycle Insurance',
-          amount:768.4,
-          date: new Date(2008,8,15)
-        },
-        {
-            id:'e4',
-            title:'airoplane Insurance',
-          amount:87.4,
-          date: new Date(2012,5,17)
-        },
+          date: new Date(2022,11,24)
+        }
       ];
+      
       const  App = () => {
             const [expenses, setExpenses] = useState(Dummy_Data);
           
         
       const addExpenseHandler =(expense)=>{
-        setExpenses((updatedExpense)=>{
-          return [expense,...updatedExpense]
-        })
+        console.log(expense);
+        setExpenses([expense , ...expenses])
+        console.log(expenses);
       }
+      
 
 
         return (
